@@ -14,7 +14,7 @@ namespace PortForwarder
 {
 	public class PrivateProfile
 	{
-		private const string CONNECTIONSTRING = @"Data Source=""{0}{1}"";Version=3; Password=kR3zFqUMWg2mQ9qB;";
+		private const string CONNECTIONSTRING = @"Data Source=""{0}{1}""";
 		private const string SQL_HAS_TABLE = @"SELECT COUNT(name) FROM (SELECT name FROM sqlite_master WHERE type = 'table') WHERE name=@Name;";
 		private const string SQL_CREATE_TABLE = @"CREATE TABLE {0} (Key TEXT NOT NULL UNIQUE, Value TEXT);";
 		private const string SQL_GET = @"SELECT Value FROM {0} WHERE Key = @Key;";
